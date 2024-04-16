@@ -1,1 +1,7 @@
-/Users/rakharrs/Developer/codage_TSINJO/huffman/src/main/java/com/etu1999/App.java
+/Users/rakharrs/Developer/codage_TSINJO/TextCompressor/src/main/java/com/etu1999/huf/HuffmanCompressor.java
+/Users/rakharrs/Developer/codage_TSINJO/TextCompressor/src/main/java/com/etu1999/node/Node.java
+/Users/rakharrs/Developer/codage_TSINJO/TextCompressor/src/main/java/com/etu1999/App.java
+/Users/rakharrs/Developer/codage_TSINJO/TextCompressor/src/main/java/com/etu1999/process/NodeComparator.java
+/Users/rakharrs/Developer/codage_TSINJO/TextCompressor/src/main/java/com/etu1999/node/Source.java
+/Users/rakharrs/Developer/codage_TSINJO/TextCompressor/src/main/java/com/etu1999/utils/Misc.java
+/Users/rakharrs/Developer/codage_TSINJO/TextCompressor/src/main/java/com/etu1999/huf/Huffman.java

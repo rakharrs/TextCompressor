@@ -1,1 +1,7 @@
+com/etu1999/node/Source.class
+com/etu1999/process/NodeComparator.class
+com/etu1999/node/Node.class
+com/etu1999/utils/Misc.class
+com/etu1999/huf/HuffmanCompressor.class
+com/etu1999/huf/Huffman.class
 com/etu1999/App.class

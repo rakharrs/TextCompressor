@@ -24,10 +24,10 @@ public class App
     public static void main( String[] args ) throws IOException
     {
         
-        /*HuffmanCompressor compressor = new HuffmanCompressor("/Users/rakharrs/Developer/codage_TSINJO/huffman/file/file.txt");
-        compressor.compress();*/
-        File file = new File("/Users/rakharrs/Developer/codage_TSINJO/huffman/file/file.txt.cmp");
-        HuffmanCompressor.decompress(file,"/Users/rakharrs/Developer/codage_TSINJO/huffman/file/unzipped.txt");
+        // HuffmanCompressor compressor = new HuffmanCompressor("/Users/rakharrs/Developer/codage_TSINJO/TextCompressor/file/file.txt");
+        // compressor.compress();
+        File file = new File("/Users/rakharrs/Developer/codage_TSINJO/TextCompressor/file/file.txt.cmp");
+        HuffmanCompressor.decompress(file,"/Users/rakharrs/Developer/codage_TSINJO/TextCompressor/file/unzipped.txt");
         
 
     }  

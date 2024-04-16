@@ -161,44 +161,51 @@ public class Huffman{
 
     public File compress(File file) throws IOException{
         File compressed = new File(file.getParent()+File.separator+file.getName()+".cmp");
+        File temp = new File(file.getParent()+File.separator+file.getName()+".cmp.temp");
         String code = encode();
         byte[] bytes = Misc.toBytes(code);
         String codage = getNodeAsString();
         byte[] codageBytes = codage.getBytes();
-        FileUtils.writeByteArrayToFile(compressed, (String.valueOf(bytes.length)+"\n").getBytes(),false);
-        FileUtils.writeByteArrayToFile(compressed, codageBytes, true);
-        FileUtils.writeByteArrayToFile(compressed, bytes, true);
+        FileUtils.writeByteArrayToFile(temp, (String.valueOf(bytes.length)+"\n").getBytes(),false);
+        FileUtils.writeByteArrayToFile(temp, codageBytes, true);
+        FileUtils.writeByteArrayToFile(compressed, bytes, false);
+        temp.createNewFile();
         return compressed;
     }
 
     public static String test(File file) throws IOException{
         BufferedReader br = new BufferedReader(new FileReader(file));
+        System.out.println(file.getAbsolutePath());
+        BufferedReader br2 = new BufferedReader(new FileReader(new File(file.getAbsolutePath()+".temp")));
         StringBuilder builder = new StringBuilder();
         String st;
-        int textlength = Integer.parseInt(br.readLine());
-        int count = Integer.parseInt(br.readLine());
-        System.out.println(count);
+        int textlength = Integer.parseInt(br2.readLine());
+        int count = Integer.parseInt(br2.readLine());
+
         int i = 0;
         HashMap<String, String> code = new HashMap<>();
         String temp_st = "";
-        int s = 0;
-        String temp2 = "";
-        while (i  < count && (st = br.readLine()) != null){
-            temp2 += st;
+        String tmp_st = "";
+        while (i  < count && (st = br2.readLine()) != null){
             if(st.isEmpty()){
-                code.put(temp_st, "\n");
+                code.remove(temp_st);
+                code.put("\n", tmp_st);
                 continue;
             }
-            temp_st = br.readLine();
+            temp_st = br2.readLine();
+            tmp_st = st;
             code.put(temp_st, st);
             i++;
         }
         byte[] all = FileUtils.readFileToByteArray(file);
-        all = Arrays.copyOfRange(all, all.length - textlength, all.length);
-        
+        //all = Arrays.copyOfRange(all, 0, textlength);
         
         Huffman ne = new Huffman();
+        for (String key : code.keySet()) {
+            System.out.println(key + " : " + code.get(key));
+        }
         //return "";
+        System.out.println(ne.decode(Misc.fromBytetoString(all), code));
         return ne.decode(Misc.fromBytetoString(all), code);
         
     }

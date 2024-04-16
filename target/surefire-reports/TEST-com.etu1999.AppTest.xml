@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="com.etu1999.AppTest" time="0.009" tests="1" errors="0" skipped="0" failures="0">
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="com.etu1999.AppTest" time="0.012" tests="1" errors="0" skipped="0" failures="0">
   <properties>
     <property name="java.specification.version" value="17"/>
     <property name="sun.jnu.encoding" value="UTF-8"/>
-    <property name="java.class.path" value="/Users/rakharrs/Developer/codage_TSINJO/huffman/target/test-classes:/Users/rakharrs/Developer/codage_TSINJO/huffman/target/classes:/Users/rakharrs/.m2/repository/junit/junit/4.11/junit-4.11.jar:/Users/rakharrs/.m2/repository/org/hamcrest/hamcrest-core/1.3/hamcrest-core-1.3.jar:"/>
+    <property name="java.class.path" value="/Users/rakharrs/Developer/codage_TSINJO/TextCompressor/target/test-classes:/Users/rakharrs/Developer/codage_TSINJO/TextCompressor/target/classes:/Users/rakharrs/.m2/repository/junit/junit/4.11/junit-4.11.jar:/Users/rakharrs/.m2/repository/org/hamcrest/hamcrest-core/1.3/hamcrest-core-1.3.jar:/Users/rakharrs/.m2/repository/commons-io/commons-io/2.15.1/commons-io-2.15.1.jar:"/>
     <property name="java.vm.vendor" value="Eclipse Adoptium"/>
     <property name="sun.arch.data.model" value="64"/>
     <property name="java.vendor.url" value="https://adoptium.net/"/>
@@ -12,10 +12,10 @@
     <property name="sun.java.launcher" value="SUN_STANDARD"/>
     <property name="user.country" value="MG"/>
     <property name="sun.boot.library.path" value="/Library/Java/JavaVirtualMachines/temurin-17.jdk/Contents/Home/lib"/>
-    <property name="sun.java.command" value="/Users/rakharrs/Developer/codage_TSINJO/huffman/target/surefire/surefirebooter15119761927904816853.jar /Users/rakharrs/Developer/codage_TSINJO/huffman/target/surefire 2024-04-15T05-46-20_199-jvmRun1 surefire8028797080601414210tmp surefire_03363966711950603492tmp"/>
+    <property name="sun.java.command" value="/Users/rakharrs/Developer/codage_TSINJO/TextCompressor/target/surefire/surefirebooter3780975911520732162.jar /Users/rakharrs/Developer/codage_TSINJO/TextCompressor/target/surefire 2024-04-16T13-54-53_083-jvmRun1 surefire7203111811739751072tmp surefire_04013367082649132307tmp"/>
     <property name="http.nonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
     <property name="jdk.debug" value="release"/>
-    <property name="surefire.test.class.path" value="/Users/rakharrs/Developer/codage_TSINJO/huffman/target/test-classes:/Users/rakharrs/Developer/codage_TSINJO/huffman/target/classes:/Users/rakharrs/.m2/repository/junit/junit/4.11/junit-4.11.jar:/Users/rakharrs/.m2/repository/org/hamcrest/hamcrest-core/1.3/hamcrest-core-1.3.jar:"/>
+    <property name="surefire.test.class.path" value="/Users/rakharrs/Developer/codage_TSINJO/TextCompressor/target/test-classes:/Users/rakharrs/Developer/codage_TSINJO/TextCompressor/target/classes:/Users/rakharrs/.m2/repository/junit/junit/4.11/junit-4.11.jar:/Users/rakharrs/.m2/repository/org/hamcrest/hamcrest-core/1.3/hamcrest-core-1.3.jar:/Users/rakharrs/.m2/repository/commons-io/commons-io/2.15.1/commons-io-2.15.1.jar:"/>
     <property name="sun.cpu.endian" value="little"/>
     <property name="user.home" value="/Users/rakharrs"/>
     <property name="user.language" value="en"/>
@@ -23,12 +23,12 @@
     <property name="java.version.date" value="2023-07-18"/>
     <property name="java.home" value="/Library/Java/JavaVirtualMachines/temurin-17.jdk/Contents/Home"/>
     <property name="file.separator" value="/"/>
-    <property name="basedir" value="/Users/rakharrs/Developer/codage_TSINJO/huffman"/>
+    <property name="basedir" value="/Users/rakharrs/Developer/codage_TSINJO/TextCompressor"/>
     <property name="java.vm.compressedOopsMode" value="Zero based"/>
     <property name="line.separator" value="&#10;"/>
     <property name="java.specification.name" value="Java Platform API Specification"/>
     <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
-    <property name="surefire.real.class.path" value="/Users/rakharrs/Developer/codage_TSINJO/huffman/target/surefire/surefirebooter15119761927904816853.jar"/>
+    <property name="surefire.real.class.path" value="/Users/rakharrs/Developer/codage_TSINJO/TextCompressor/target/surefire/surefirebooter3780975911520732162.jar"/>
     <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
     <property name="ftp.nonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
     <property name="java.runtime.version" value="17.0.8+7"/>
@@ -43,7 +43,7 @@
     <property name="java.vendor.url.bug" value="https://github.com/adoptium/adoptium-support/issues"/>
     <property name="java.io.tmpdir" value="/var/folders/dt/fs7s2ltx47v8cx4_9npg0ddr0000gn/T/"/>
     <property name="java.version" value="17.0.8"/>
-    <property name="user.dir" value="/Users/rakharrs/Developer/codage_TSINJO/huffman"/>
+    <property name="user.dir" value="/Users/rakharrs/Developer/codage_TSINJO/TextCompressor"/>
     <property name="os.arch" value="aarch64"/>
     <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
     <property name="native.encoding" value="UTF-8"/>
@@ -55,5 +55,5 @@
     <property name="socksNonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
     <property name="java.class.version" value="61.0"/>
   </properties>
-  <testcase name="shouldAnswerWithTrue" classname="com.etu1999.AppTest" time="0.001"/>
+  <testcase name="shouldAnswerWithTrue" classname="com.etu1999.AppTest" time="0"/>
 </testsuite>

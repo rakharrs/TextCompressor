@@ -24,8 +24,7 @@ public class HuffmanCompressor {
     public static void decompress(File file, String path) throws IOException{
         File unziped = new File(path);
         file.createNewFile();
-        
-        FileUtils.write(unziped, Huffman.test(file), StandardCharsets.UTF_8);
+        FileUtils.write(unziped, Huffman.test(file), StandardCharsets.UTF_8, false);
     }
     
 }
